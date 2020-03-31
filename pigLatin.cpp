@@ -1,3 +1,13 @@
+/**
+ * A program which turns a given English word into Pig Latin.
+ * Words which begin with a consonant, the initial letter is moved to the end of the
+ * word plus 'ay'.
+ * If the word begins with a vowel, 'way' is added to the end
+ * A word which begins with 'qu', it is treated as an initial consonant and
+ * both 'qu' are moved to the end.
+ *  
+ */
+
 #include <iostream>
 using namespace std;
 

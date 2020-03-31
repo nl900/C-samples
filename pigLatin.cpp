@@ -30,20 +30,23 @@ string pigLatinify(string str) {
     string new_str = "";
     int i;
     bool isQ = false;
+    
     if (str.find("qu") == 0) {
         i = 2;
         isQ = true;
     } else {
         i = 1;
     }
-    new_str = str.substr(i, str.size()-i);
     if (isQ) {
+        new_str = str.substr(i, str.size()-i);
         new_str += str.substr(0, i);
         new_str += suff;
     } else if (is_vowel(first)) {
+        new_str += str;
         new_str += 'w';
         new_str += suff;
     } else {
+        new_str = str.substr(i, str.size()-i);
         new_str += first;
         new_str += suff;
     }
